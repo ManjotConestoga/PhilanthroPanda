@@ -36,9 +36,9 @@ const PhilanthroPanda = new Client({
   password: process.env.password,
   database: process.env.database,
   port: 5432,
-  ssl: {
-    rejectUnauthorized: false, // Allow self-signed certificates, if necessary
-  },
+  // ssl: {
+  //   rejectUnauthorized: false, // Allow self-signed certificates, if necessary
+  // },
 });
 
 // console.log("Database config:", {
