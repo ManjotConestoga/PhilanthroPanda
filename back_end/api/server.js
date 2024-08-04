@@ -14,11 +14,13 @@ app.use(express.json());
 const jobsRoutes = require("./routes/jobs");
 const authRoutes = require("./routes/auth");
 const applicationsRoutes = require("./routes/applications");
+const profiles = require("./routes/profiles");
 
 // Use routes
 app.use(jobsRoutes);
 app.use(authRoutes);
 app.use(applicationsRoutes);
+app.use(profiles);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
